@@ -32,6 +32,7 @@
       letter-spacing: 0.5px;
        display: block;
   margin: 0 auto;
+  cursor: pointer;
     }
     nav a {
       margin-left: 24px;
@@ -75,6 +76,12 @@
       font-size: 16px;
       transition: all .3s;
     }
+    a.btn {
+  text-decoration: none;
+}
+    .btn:hover {
+  text-decoration: none;
+}
     .btn-primary {
       background: var(--accent);
       color: white;
@@ -98,6 +105,12 @@
       border-radius: 16px;
       box-shadow: 0 6px 30px rgba(0,0,0,0.4);
       transition: transform .3s;
+  text-decoration: none; /* убирает подчёркивание */
+  color: inherit; /* сохраняет цвет текста */
+  display: block; /* делает ссылку блочной */
+}
+.card:hover { transform: translateY(-4px); }
+
     }
     .card:hover { transform: translateY(-4px); }
     .card h3 { margin: 0 0 12px; font-size: 20px; }
